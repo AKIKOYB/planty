@@ -1,4 +1,8 @@
-#planty from openclassrooms
+#
+planty from openclassrooms
+#
 
-##theme
+##
+theme
+##
 this repo contains child theme of wordpress astra for planty project.
