@@ -1,0 +1,152 @@
+ /*Nous Contacter Page*/ 
+ .contacter-form input {
+  border-color: white; 
+  width: 383px;
+  height: 71px;
+}
+
+.contacter-form textarea {
+  border-color: white; 
+}
+
+.ContacterBouton {
+  width: 100%;
+  height: 55px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.ContacterBouton input {
+  width: 198px;
+  height: 55px;
+}
+
+.ContacterBouton input:hover {
+  color: white;
+  background-color:  #d2776a;
+  border-color:  #d2776a;
+}
+
+ /*Commander Page*/ 
+
+  /*Quantite*/ 
+  .choix-parfum {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .parfum{
+    width: 192px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  /*dans l'input des quantite*/
+  .parfum input {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    width: 39px !important;
+    border-radius: 0px !important;
+    padding: 0% !important;
+    height: 56px;
+    border-color: white;
+  }
+
+  /*divider horizontal*/
+  .divider-hseparator {
+    border-block-start-width: 1px;
+    border-block-start-style: solid;
+    border-block-start-color: white;
+    width: 860px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    display: flex;
+  }
+
+  /* delivery information */
+  /* le container de vos infos + Livraison */
+  .commander-form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* column information */
+  .info-column{
+    width: 48%;
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  /* test */
+  .vseparator p {
+    width: 2%;
+    height: 447px;
+  }
+
+  /*divider vertical*/
+  .divider-vseparator {
+    border-color: white;
+    border: 1px;
+    height: 447px;
+    display: inline-block;
+    /* border-block-start-width: 1px;
+    border-block-start-style: solid;
+    border-block-start-color: white;
+    border-left: 50px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto; */
+  }
+
+  .commander-title {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  .commander-label {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  /* form  */
+  .commander-form input {
+    border-color: white;
+    width: 383px;
+    height: 71px;
+  }
+
+  /* le contqiner du bouton + spinner */
+  .CommanderBouton {
+    width: 100%;
+    height: 55px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .CommanderBouton input {
+    width: 198px;
+    height: 55px;
+  }
+
+  .CommanderBouton input:hover {
+    color: white;
+    background-color:  #d2776a;
+    border-color:  #d2776a;
+  }
+
+  
+  /* WTF */
+  .wpcf7-spinner{
+    visibility: hidden;
+  }
