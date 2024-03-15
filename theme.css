@@ -1,3 +1,19 @@
+ 
+ /*Admin*/
+ .admin-button {
+  width: 150px;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+} 
+ 
+.admin-button:hover {
+  background-color: #DC9F96; 
+  color: white;
+}
+ 
  /*Nous Contacter Page*/ 
  .contacter-form input {
   border-color: white; 
@@ -23,8 +39,8 @@
 
 .ContacterBouton input:hover {
   color: white;
-  background-color:  #d2776a;
-  border-color:  #d2776a;
+  background-color: #C02E44;
+  border-color:  #C02E44;
 }
 
  /*Commander Page*/ 
@@ -42,7 +58,7 @@
     text-align: center;
   }
 
-  /*dans l'input des quantite*/
+  /*input quantite*/
   .parfum input {
     color: black;
     font-size: 16px;
@@ -63,13 +79,13 @@
     width: 860px;
     margin-top: 0px;
     margin-right: auto;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
     margin-left: auto;
     display: flex;
   }
 
   /* delivery information */
-  /* le container de vos infos + Livraison */
+  /* container vos info + Livraison */
   .commander-form {
     display: flex;
     justify-content: space-between;
@@ -78,19 +94,25 @@
 
   /* column information */
   .info-column{
-    width: 48%;
+    width: 383px;
     display: inline-block;
-    padding-right: 10px;
-  }
+    }
 
-  /* test */
+  /* testing, doesnt work */
   .vseparator p {
-    width: 2%;
-    height: 447px;
+    width: 1%;
+    height: 95%;
   }
 
   /*divider vertical*/
   .divider-vseparator {
+        border-left: 2px solid white;
+        display: inline-block;
+        height: 98%;
+        margin: 0 50px;
+      }
+    /*
+    background-color: white;
     border-color: white;
     border: 1px;
     height: 447px;
@@ -103,7 +125,6 @@
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto; */
-  }
 
   .commander-title {
     color: white;
@@ -117,6 +138,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
+    margin-bottom: 100px;
   }
 
   /* form  */
@@ -124,9 +146,11 @@
     border-color: white;
     width: 383px;
     height: 71px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
-  /* le contqiner du bouton + spinner */
+  /* container bouton + spinner */
   .CommanderBouton {
     width: 100%;
     height: 55px;
@@ -145,8 +169,32 @@
     border-color:  #d2776a;
   }
 
-  
-  /* WTF */
+  .entry-content p {
+    margin-bottom: 20px;
+  }
+
+  .wpcf7-response-output {
+    color: white;
+    border-color: white !important;
+    text-align: center;
+  }
+
   .wpcf7-spinner{
     visibility: hidden;
+  }
+  
+/*
+  @media (min-width: 320px) {
+
+  .commander-form {
+    display:;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* column information 
+  .info-column{
+    width: 383px;
+    display: inline-block;
+    }
   }
