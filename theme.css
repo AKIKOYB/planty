@@ -1,19 +1,4 @@
  
- /*Admin*/
- .admin-button {
-  width: 150px;
-  font-size: 16px;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-} 
- 
-.admin-button:hover {
-  background-color: #DC9F96; 
-  color: white;
-}
- 
  /*Nous Contacter Page*/ 
  .contacter-form input {
   border-color: white; 
@@ -30,11 +15,15 @@
   height: 55px;
   font-size: 15px;
   text-align: center;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center;
 }
 
 .ContacterBouton input {
   width: 198px;
   height: 55px;
+  display: block;
 }
 
 .ContacterBouton input:hover {
@@ -111,20 +100,7 @@
         height: 98%;
         margin: 0 50px;
       }
-    /*
-    background-color: white;
-    border-color: white;
-    border: 1px;
-    height: 447px;
-    display: inline-block;
-    /* border-block-start-width: 1px;
-    border-block-start-style: solid;
-    border-block-start-color: white;
-    border-left: 50px;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto; */
+
 
   .commander-title {
     color: white;
@@ -156,13 +132,17 @@
     height: 55px;
     font-size: 15px;
     text-align: center;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center;
   }
 
   .CommanderBouton input {
     width: 198px;
     height: 55px;
+    display: block;
   }
-
+  
   .CommanderBouton input:hover {
     color: white;
     background-color:  #d2776a;
@@ -179,22 +159,18 @@
     text-align: center;
   }
 
-  .wpcf7-spinner{
-    visibility: hidden;
-  }
-  
-/*
-  @media (min-width: 320px) {
 
-  .commander-form {
-    display:;
-    justify-content: space-between;
-    width: 100%;
+
+@media (max-width: 767px) {
+  .vseparator{
+    visibility: hidden; 
   }
 
-  /* column information 
-  .info-column{
-    width: 383px;
-    display: inline-block;
+  .hseparator, .commander-form, .info-column, .CommanderBouton {
+    display: block;
     }
-  }
+
+  .hseparator, .commander-title, .commander-label, .commander-form, .info-column, .CommanderBouton {
+    width: 100%;
+    }
+}
