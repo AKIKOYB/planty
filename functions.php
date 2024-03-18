@@ -14,16 +14,13 @@ add_filter( 'wp_nav_menu_items','add_admin_link', 10, 2 );
 
 function add_admin_link($items, $args) {
     if (is_user_logged_in() && $args->theme_location == 'primary') {
-        // Split the menu items into an array
         $menu_items = explode('</li>', $items);
 
-        // Insert the new menu item as the second item
         $admin_link = '<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="'. get_admin_url() .'" class="menu-link">Admin</a></li>';
         array_splice($menu_items, 1, 0, $admin_link);
 
-        // Join the array back into a string
         $items = implode('</li>', $menu_items);
-        $items .= '</li>'; // Add the closing tag for the last item
+        $items .= '</li>'; 
     }
     return $items;
 }
