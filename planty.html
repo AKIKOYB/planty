@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <title>planty</title>
+    </head>
+    <body>
+<!--commander cf7-->
+        <div class="quantite">
+            <div class="choix-parfum">
+                <div class="parfum">
+                    [text fraise placeholder "0"]
+                </div>   
+                <div class="parfum">
+                    [text pamplemousse placeholder "0"]
+                </div>   
+                <div class="parfum">
+                    [text framboise placeholder "0"]
+                </div>   
+                <div class="parfum">
+                    [text citron placeholder "0"]
+                </div>   
+            </div>
+        </div>
+        <div class="hseparator">
+            <span class="divider-hseparator"></span>
+        </div>
+        <div class="commander-form">
+            <div class="info-column">
+                <p class="commander-title"> Vos informations </p>
+                <label class="commander-label"> Nom
+                    [text* your-name class:commander autocomplete:name] </label>
+                <label class="commander-label"> Prénom
+                    [text* your-first-name class:commander autocomplete:family-name] </label>
+                <label class="commander-label"> E-mail
+                    [email* your-email class:commander autocomplete:email] </label>
+            </div>
+            <div class="vseparator">
+                <span class="divider-vseparator"> </span>
+            </div>
+            <div class="info-column">
+                <p class="commander-title"> Livraison </p>
+                <label class="commander-label"> Adresse de livraison
+                    [text* address class:commander autocomplete:street-address] </label>
+                <label class="commander-label"> Code postal
+                    [text* zip-code class:commander autocomplete:postal-code] </label>
+                <label class="commander-label"> Ville
+                    [text* city class:commander autocomplete:address-level2] </label>
+            </div>
+        </div>
+        <div class="CommanderBouton">
+            [submit class:btn "Commander"]
+        </div>
+
+        <!--nous contacter cf7-->
+        <div class="contacter-form">
+            <label class="contacter"> Nom
+                [text* nom class:nous-contacter autocomplete:name] </label>
+            <label class="contacter"> E-mail
+                [email* email class:nous-contacter autocomplete:email] </label>
+            <label class="contacter"> Message
+                [textarea message class:nous-contacter] </label>
+            </div>
+            <div class="ContacterBouton">
+            [submit class:envoyer-btn "Envoyer"]
+            </div>
+    </body>
+</html>
